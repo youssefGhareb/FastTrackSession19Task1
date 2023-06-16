@@ -1,0 +1,94 @@
+.Job {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 32px 35px;
+  &-imgCont {
+    width: 100%;
+  }
+
+  &-companyGroup {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 11px;
+    &-companyTitle {
+      font-weight: 700;
+      color: #45aa9c;
+    }
+    &-jobTags {
+      display: flex;
+      gap: 8px;
+      &-tag {
+        padding: 6px 8px;
+        border-radius: 15px;
+        font-weight: 700;
+        color: #fff;
+        font-size: 11px;
+      }
+      &-new {
+        background-color: #45aa9c;
+      }
+      &-featured {
+        background-color: #1d2728;
+      }
+    }
+  }
+
+  &-title {
+    color: #1d2728;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  &-info {
+    display: flex;
+    gap: 42px;
+    color: #45aa9c;
+    &-item {
+      font-weight: 700;
+      position: relative;
+      &::after {
+        content: ".";
+        font-size: 20px;
+        font-weight: 800;
+        position: absolute;
+        left: 125%;
+        top: -8px;
+      }
+      &:last-child{
+        &::after{
+            content: none;
+        }
+      }
+    }
+  }
+
+  &-skills {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    li {
+      background-color: #ebf7f3;
+      color: #45aa9c;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 9px;
+      border-radius: 5px;
+      transition: hover .3s ease-in-out;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #45aa9c;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.featured-border{
+    border-left: 5px solid #709d9a;
+}
